@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SANGHVI SALES & MEHTA ENTERPRISE - CUSTOM STYLESHEET
+   SANGHVI SALES CORPORATION & MEHTA ENTERPRISE - CUSTOM STYLESHEET
    Colors: Industrial Orange (#ff6600), Deep Navy Blue (#0a1d37), Crisp White (#fff)
    Optimized for 24-inch desktop, 13-inch laptop, and mobile screens.
    ========================================================================== */
@@ -1080,14 +1080,29 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 @media (max-width: 991.98px) {
     .hero-title {
-        font-size: 2.4rem;
+        font-size: 2.3rem;
+        line-height: 1.15;
     }
     .hero-section {
-        padding: 35px 0 50px 0;
+        padding: 25px 0 40px 0;
     }
-    .floating-badge {
-        position: static;
-        margin-top: 8px;
+    .hero-image-col {
+        margin-top: 25px;
+    }
+    .hero-image-wrapper {
+        max-width: 100%;
+    }
+    /* Hide floating overlay badge on mobile so it doesn't overlap/cut the banner image */
+    .hero-image-wrapper .floating-badge {
+        display: none !important;
+    }
+    .image-card-frame {
+        padding: 14px 8px;
+    }
+    .hero-banner-img {
+        width: 100%;
+        max-height: 380px;
+        object-fit: contain !important;
     }
     .brand-text {
         display: none !important;
@@ -1098,11 +1113,40 @@ h1, h2, h3, h4, h5, h6 {
     body {
         padding-bottom: 52px; /* Prevent bottom content from being covered by sticky bar */
     }
+    .top-bar {
+        font-size: 0.72rem;
+        padding: 3px 0;
+    }
+    .top-bar .top-link {
+        font-size: 0.72rem;
+    }
+    .top-wa-btn {
+        font-size: 0.70rem;
+        padding: 2px 7px;
+    }
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.95rem;
+        line-height: 1.15;
+    }
+    .hero-section {
+        padding: 20px 0 30px 0;
     }
     .hero-cta .btn {
         width: 100%;
+    }
+    .hero-image-wrapper {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .image-card-frame {
+        padding: 12px 6px;
+        border-radius: var(--radius-lg);
+    }
+    .hero-banner-img {
+        width: 100%;
+        height: auto;
+        max-height: 340px;
+        object-fit: contain !important;
     }
     .partner-img-wrapper {
         height: 380px;

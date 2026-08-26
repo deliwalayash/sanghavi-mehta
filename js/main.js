@@ -1,5 +1,5 @@
 /**
- * Sanghvi Sales & Mehta Enterprise - Main JavaScript
+ * Sanghvi Sales Corporation & Mehta Enterprise - Main JavaScript
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -79,7 +79,7 @@ function openProductModal(title, imageSrc, brand, description) {
     document.getElementById('modalProductDesc').textContent = description;
 
     // Set WhatsApp link
-    const waText = encodeURIComponent(`Hello Sanghvi Sales & Mehta Enterprise, I am interested in inquiring about ${title} (${brand}). Please provide price & specifications.`);
+    const waText = encodeURIComponent(`Hello Sanghvi Sales Corporation & Mehta Enterprise, I am interested in inquiring about ${title} (${brand}). Please provide price & specifications.`);
     document.getElementById('modalWhatsAppBtn').href = `https://wa.me/919825760022?text=${waText}`;
 
     // Set quote button in modal
@@ -130,7 +130,7 @@ function sendViaWhatsApp() {
     const product = document.getElementById('productSelect').value || 'Industrial Products & Piping';
     const details = document.getElementById('requirementDetails').value.trim() || 'Please share product catalog and bulk price list.';
 
-    const message = `*INQUIRY - SANGHVI SALES & MEHTA ENTERPRISE*\n` +
+    const message = `*INQUIRY - SANGHVI SALES CORPORATION & MEHTA ENTERPRISE*\n` +
                     `----------------------------------\n` +
                     `*Name:* ${name}\n` +
                     `*Company:* ${company}\n` +

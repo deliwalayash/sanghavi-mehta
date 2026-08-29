@@ -172,6 +172,18 @@ function initNavbarScroll() {
             navbar.classList.remove('shadow');
         }
     });
+
+    // Auto-close mobile navbar on link click
+    const navLinks = document.querySelectorAll('#navContent .nav-link, #navContent .btn');
+    const navCollapse = document.getElementById('navContent');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navCollapse && navCollapse.classList.contains('show')) {
+                const bsCollapse = bootstrap.Collapse.getInstance(navCollapse) || new bootstrap.Collapse(navCollapse, { toggle: false });
+                bsCollapse.hide();
+            }
+        });
+    });
 }
 
 // 1-Click Copy Email Function for Header Popover

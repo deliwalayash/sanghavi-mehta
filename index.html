@@ -164,17 +164,22 @@
     <nav class="navbar navbar-expand-xl sticky-top bg-white shadow-sm" id="mainNavbar">
         <div class="container-fluid px-3 px-xl-4">
             <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
-                <img src="images/logo_1.jpeg" alt="Sanghvi Sales Corporation & Mehta Enterprise Logo" class="brand-logo" onerror="this.src='https://via.placeholder.com/220x60?text=Sanghvi+Sales+Corporation';">
+                <div class="brand-logo-card">
+                    <img src="images/logo_1.jpeg" alt="Sanghvi Sales Corporation & Mehta Enterprise Logo" class="brand-logo" onerror="this.src='images/logo.png';">
+                </div>
                 <div class="brand-text d-flex flex-column">
-                    <span class="brand-name">Sanghvi Sales Corporation & Mehta Enterprise</span>
-                    <span class="brand-sub">Industrial Belts, Hoses & Pipes Specialist</span>
+                    <div class="brand-title-wrap">
+                        <span class="brand-company-primary">SANGHVI SALES CORPORATION</span>
+                        <span class="brand-company-secondary"><span class="brand-company-sep">&amp;</span> MEHTA ENTERPRISE</span>
+                    </div>
+                    <span class="brand-sub">Industrial Belts, Hoses &amp; Pipes</span>
                 </div>
             </a>
 
             <!-- Right Controls on Navbar (Email Action & Mobile Toggler) -->
             <div class="d-flex align-items-center gap-2">
-                <!-- Email Quick Action with Hover / Click Popover & Copy -->
-                <div class="dropdown email-action-dropdown">
+                <!-- Email Quick Action for Desktop / Tablet -->
+                <div class="dropdown email-action-dropdown d-none d-md-block">
                     <button class="btn btn-outline-navy btn-sm email-trigger-btn" type="button" id="emailDropdown" data-bs-toggle="dropdown" aria-expanded="false" title="Email: sanghvimehta@yahoo.com">
                         <i class="fa-solid fa-envelope text-green"></i>
                     </button>
@@ -200,8 +205,13 @@
                     </div>
                 </div>
 
-                <button class="navbar-toggler custom-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <!-- Modern Sleek Hamburger Toggler (Sure Marketing Reference Style) -->
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="custom-toggler-bars">
+                        <span class="bar-line"></span>
+                        <span class="bar-line"></span>
+                        <span class="bar-line"></span>
+                    </span>
                 </button>
             </div>
 
@@ -230,12 +240,12 @@
                     </li>
                 </ul>
 
-                <div class="nav-actions d-none d-xl-flex align-items-center gap-2">
-                    <a href="tel:+919825760022" class="btn btn-outline-navy btn-sm d-flex align-items-center gap-1">
+                <div class="nav-actions d-flex flex-column flex-xl-row align-items-stretch align-items-xl-center gap-2 mt-3 mt-xl-0 pb-3 pb-xl-0">
+                    <a href="tel:+919825760022" class="btn btn-outline-navy btn-sm d-flex align-items-center justify-content-center gap-1">
                         <i class="fa-solid fa-phone text-green"></i>
                         <span>098257 60022</span>
                     </a>
-                    <a href="#contact" class="btn btn-green btn-sm shadow-sm">
+                    <a href="#contact" class="btn btn-green btn-sm shadow-sm text-center">
                         <span>Get Quote</span>
                         <i class="fa-solid fa-arrow-right ms-1"></i>
                     </a>

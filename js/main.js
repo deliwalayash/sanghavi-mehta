@@ -21,8 +21,9 @@ function initProductFiltering() {
             const filterValue = btn.getAttribute('data-filter');
 
             productItems.forEach(item => {
-                const category = item.getAttribute('data-category');
-                if (filterValue === 'all' || category === filterValue) {
+                const categoryAttr = item.getAttribute('data-category') || '';
+                const categories = categoryAttr.split(' ');
+                if (filterValue === 'all' || categories.includes(filterValue)) {
                     item.style.display = 'block';
                     setTimeout(() => {
                         item.style.opacity = '1';
@@ -69,17 +70,27 @@ function selectProduct(productName) {
     }
 }
 
-// Product Quick View Modal Trigger
-function openProductModal(title, imageSrc, brand, description) {
+// Product Quick View Modal Trigger with Full-Resolution Image Support
+function openProductModal(title, imageSrc, brand, description, fullImgSrc) {
     const modal = new bootstrap.Modal(document.getElementById('productModal'));
+    const fullImageTarget = fullImgSrc || imageSrc;
     
     document.getElementById('modalProductName').textContent = title;
-    document.getElementById('modalProductImg').src = imageSrc;
+    const modalImg = document.getElementById('modalProductImg');
+    modalImg.src = imageSrc;
+    modalImg.alt = `${title} - Sanghvi Sales Corporation & Mehta Enterprise Surat`;
+    
+    // Full image link in modal
+    const fullImgLink = document.getElementById('modalFullImgLink');
+    if (fullImgLink) {
+        fullImgLink.href = fullImageTarget;
+    }
+    
     document.getElementById('modalProductBrand').textContent = brand;
     document.getElementById('modalProductDesc').textContent = description;
 
     // Set WhatsApp link
-    const waText = encodeURIComponent(`Hello Sanghvi Sales Corporation & Mehta Enterprise, I am interested in inquiring about ${title} (${brand}). Please provide price & specifications.`);
+    const waText = encodeURIComponent(`Hello Sanghvi Sales Corporation & Mehta Enterprise, I am interested in inquiring about ${title} (${brand}). Please provide price & technical specifications.`);
     document.getElementById('modalWhatsAppBtn').href = `https://wa.me/919825760022?text=${waText}`;
 
     // Set quote button in modal

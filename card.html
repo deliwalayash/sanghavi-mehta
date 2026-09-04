@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Visiting Cards | Sanghvi Sales Corporation & Mehta Enterprise</title>
+    <script>
+        // Redirect based on URL parameters if present, e.g. card.html?p=chirag
+        const params = new URLSearchParams(window.location.search);
+        const p = params.get('p') || params.get('person');
+        if (p && p.toLowerCase().includes('chirag')) {
+            window.location.replace('card-chiragbhai.html');
+        } else if (p && p.toLowerCase().includes('vinu')) {
+            window.location.replace('card-vinubhai.html');
+        } else {
+            // Default to Vinubhai
+            window.location.replace('card-vinubhai.html');
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting to Digital Visiting Card... <a href="card-vinubhai.html">Click here if not redirected</a>.</p>
+</body>
+</html>

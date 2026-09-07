@@ -5,9 +5,9 @@
 
 const CONTACT_DATA = {
     vinubhai: {
-        name: "Virendrabhai (Vinubhai) Sanghvi",
+        name: "Virendrabhai (Vinubhai) Mehta",
         firstName: "Virendrabhai",
-        lastName: "Sanghvi",
+        lastName: "Mehta",
         nickName: "Vinubhai",
         title: "Partner",
         organization: "Sanghvi Sales Corporation & Mehta Enterprise",
@@ -26,9 +26,9 @@ const CONTACT_DATA = {
         cardUrl: "card-vinubhai.html"
     },
     chiragbhai: {
-        name: "Chiragbhai Sanghvi",
+        name: "Chiragbhai Mehta",
         firstName: "Chiragbhai",
-        lastName: "Sanghvi",
+        lastName: "Mehta",
         nickName: "Chiragbhai",
         title: "Partner",
         organization: "Sanghvi Sales Corporation & Mehta Enterprise",
@@ -71,7 +71,7 @@ function downloadVCard(personKey) {
     ].join("\r\n");
 
     const blob = new Blob([vCardData], { type: "text/vcard;charset=utf-8;" });
-    const fileName = `${person.firstName}_${person.lastName}_Sanghvi_Sales.vcf`;
+    const fileName = `${person.firstName}_${person.lastName}_Mehta_Enterprise.vcf`;
 
     if (navigator.msSaveBlob) {
         // IE 10+

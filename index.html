@@ -110,7 +110,10 @@
             {"@type": "Brand", "name": "Rathi Couplings & Transpower"},
             {"@type": "Brand", "name": "Astral Pipes"},
             {"@type": "Brand", "name": "Dutron Plastics"},
-            {"@type": "Brand", "name": "JK Fenner"}
+            {"@type": "Brand", "name": "JK Fenner"},
+            {"@type": "Brand", "name": "Charminar (Eastwell Industries)"},
+            {"@type": "Brand", "name": "Champion Jointings Ltd."},
+            {"@type": "Brand", "name": "KTR / ROTEX® Couplings"}
           ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
@@ -128,6 +131,11 @@
               },
               {
                 "@type": "OfferCatalog",
+                "name": "ROTEX® Torsionally Flexible Couplings (T-PUR®)",
+                "description": "ROTEX KTR Torsionally Flexible Jaw Couplings with T-PUR elastomeric spider inserts for fail-safe vibration-damped power transmission."
+              },
+              {
+                "@type": "OfferCatalog",
                 "name": "Industrial Piping & Hoses",
                 "description": "Astral Chem PRO CPVC, Aquarius UPVC Pipes, Dutron PVC Suction Pipes and Heavy Duty Hoses."
               },
@@ -135,6 +143,16 @@
                 "@type": "OfferCatalog",
                 "name": "JK Fenner Belts & Couplings",
                 "description": "JK Fenner V-Belts, Poly-F Belts, Pulleys, and Tyre Couplings."
+              },
+              {
+                "@type": "OfferCatalog",
+                "name": "Charminar Brake Linings, Gland Packings & Jointing Sheets",
+                "description": "Charminar ZARC-45 & GRL-27 Woven Brake Linings, PTFE & Graphite Gland Packings, and CAF Jointing Sheets."
+              },
+              {
+                "@type": "OfferCatalog",
+                "name": "Champion Jointings, Gland Packing Ropes & Teflon Tapes",
+                "description": "Champion Asbestos Fibre Jointing Sheets for Steam, Oil, Acid, Gland Packing Ropes, Webbing Tape, Lagging Rope & Teflon Tape."
               }
             ]
           },
@@ -228,44 +246,14 @@
                 </div>
             </a>
 
-            <!-- Right Controls on Navbar (Email Action & Mobile Toggler) -->
-            <div class="d-flex align-items-center gap-2">
-                <!-- Email Quick Action for Desktop / Tablet -->
-                <div class="dropdown email-action-dropdown d-none d-md-block">
-                    <button class="btn btn-outline-navy btn-sm email-trigger-btn" type="button" id="emailDropdown" data-bs-toggle="dropdown" aria-expanded="false" title="Email: sanghvimehta@yahoo.com">
-                        <i class="fa-solid fa-envelope text-green"></i>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-end p-3 shadow-lg rounded-3 border-0 email-popover-menu" aria-labelledby="emailDropdown" style="min-width: 275px;">
-                        <div class="d-flex align-items-center justify-content-between mb-2">
-                            <span class="small fw-bold text-navy"><i class="fa-solid fa-envelope text-green me-1"></i> Official Email</span>
-                            <span class="badge bg-light text-secondary border">Direct RFQ</span>
-                        </div>
-                        <div class="p-2 bg-light rounded-2 border d-flex align-items-center justify-content-between gap-2 mb-2">
-                            <span class="user-select-all small fw-semibold text-dark text-break" id="headerEmailText" title="Click or select to copy">sanghvimehta@yahoo.com</span>
-                            <button type="button" class="btn btn-sm btn-green px-2 py-1" onclick="copyHeaderEmail(this)" title="Copy Email ID">
-                                <i class="fa-solid fa-copy"></i>
-                            </button>
-                        </div>
-                        <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-sm btn-outline-green flex-fill" onclick="copyHeaderEmail(this)">
-                                <i class="fa-solid fa-copy me-1"></i> Copy Email
-                            </button>
-                            <a href="mailto:sanghvimehta@yahoo.com" class="btn btn-sm btn-navy flex-fill text-white">
-                                <i class="fa-solid fa-paper-plane me-1"></i> Mail Us
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modern Sleek Hamburger Toggler (Sure Marketing Reference Style) -->
-                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="custom-toggler-bars">
-                        <span class="bar-line"></span>
-                        <span class="bar-line"></span>
-                        <span class="bar-line"></span>
-                    </span>
-                </button>
-            </div>
+            <!-- Mobile Toggler (only visible on mobile/tablet screens < 1200px) -->
+            <button class="navbar-toggler custom-toggler d-xl-none ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="custom-toggler-bars">
+                    <span class="bar-line"></span>
+                    <span class="bar-line"></span>
+                    <span class="bar-line"></span>
+                </span>
+            </button>
 
             <div class="collapse navbar-collapse" id="navContent">
                 <ul class="navbar-nav mx-auto mb-0 align-items-center">
@@ -273,26 +261,50 @@
                         <a class="nav-link active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#products">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#authorized-brands">Authorized Brands</a>
+                        <a class="nav-link" href="#authorized-brands">Brands</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#partners">Leadership</a>
+                        <a class="nav-link" href="#certificates">Certificates</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#clients">Clients</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact & Map</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
 
                 <div class="nav-actions d-flex flex-column flex-xl-row align-items-stretch align-items-xl-center gap-2 mt-3 mt-xl-0 pb-3 pb-xl-0">
+                    <!-- Email Quick Action Dropdown -->
+                    <div class="dropdown email-action-dropdown d-inline-flex align-items-center justify-content-center">
+                        <button class="btn btn-outline-navy email-trigger-btn" type="button" id="emailDropdown" data-bs-toggle="dropdown" aria-expanded="false" title="Email: sanghvimehta@yahoo.com">
+                            <i class="fa-solid fa-envelope"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end p-3 shadow-lg rounded-3 border-0 email-popover-menu" aria-labelledby="emailDropdown" style="min-width: 275px;">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <span class="small fw-bold text-navy"><i class="fa-solid fa-envelope text-green me-1"></i> Official Email</span>
+                                <span class="badge bg-light text-secondary border">Direct RFQ</span>
+                            </div>
+                            <div class="p-2 bg-light rounded-2 border d-flex align-items-center justify-content-between gap-2 mb-2">
+                                <span class="user-select-all small fw-semibold text-dark text-break" id="headerEmailText" title="Click or select to copy">sanghvimehta@yahoo.com</span>
+                                <button type="button" class="btn btn-sm btn-green px-2 py-1" onclick="copyHeaderEmail(this)" title="Copy Email ID">
+                                    <i class="fa-solid fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <button type="button" class="btn btn-sm btn-outline-green flex-fill" onclick="copyHeaderEmail(this)">
+                                    <i class="fa-solid fa-copy me-1"></i> Copy Email
+                                </button>
+                                <a href="mailto:sanghvimehta@yahoo.com" class="btn btn-sm btn-navy flex-fill text-white">
+                                    <i class="fa-solid fa-paper-plane me-1"></i> Mail Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                     <a href="tel:+919825760022" class="btn btn-outline-navy btn-sm d-flex align-items-center justify-content-center gap-1">
                         <i class="fa-solid fa-phone text-green"></i>
                         <span>098257 60022</span>
@@ -402,6 +414,7 @@
                     <!-- Set 1 -->
                     <div class="client-logo-item"><img src="images/Taparia-Tools-Limited-3.webp" alt="Taparia Tools Limited Stockist Surat" class="client-img" loading="lazy" decoding="async"></div>
                     <div class="client-logo-item"><img src="images/Rathi-new-logo33-1.png" alt="Rathi Couplings & Power Transmission Surat" class="client-img" loading="lazy" decoding="async"></div>
+                    <div class="client-logo-item"><img src="images/ktr-logo.jpg" alt="KTR ROTEX Couplings Made for Motion" class="client-img" loading="lazy" decoding="async"></div>
                     <div class="client-logo-item"><img src="Clients-logo/1462340043_final_logo.png" alt="Industrial Client Logo Surat" class="client-img" loading="lazy" decoding="async"></div>
                     <div class="client-logo-item"><img src="Clients-logo/spectrum-dyes-chemicals-ltd.jpg" alt="Spectrum Dyes & Chemicals Ltd Gujarat" class="client-img" loading="lazy" decoding="async"></div>
                     <div class="client-logo-item"><img src="Clients-logo/6f59fb48eff33c66561f958b9edef34e.jfif" alt="Manufacturing Client Logo Gujarat" class="client-img" loading="lazy" decoding="async"></div>
@@ -413,6 +426,7 @@
                     <!-- Set 2 (Duplicate for smooth infinite scroll) -->
                     <div class="client-logo-item"><img src="images/Taparia-Tools-Limited-3.webp" alt="Taparia Tools Limited Stockist Surat" class="client-img" loading="lazy" decoding="async"></div>
                     <div class="client-logo-item"><img src="images/Rathi-new-logo33-1.png" alt="Rathi Couplings & Power Transmission Surat" class="client-img" loading="lazy" decoding="async"></div>
+                    <div class="client-logo-item"><img src="images/ktr-logo.jpg" alt="KTR ROTEX Couplings Made for Motion" class="client-img" loading="lazy" decoding="async"></div>
                     <div class="client-logo-item"><img src="Clients-logo/1462340043_final_logo.png" alt="Industrial Client Logo Surat" class="client-img" loading="lazy" decoding="async"></div>
                     <div class="client-logo-item"><img src="Clients-logo/spectrum-dyes-chemicals-ltd.jpg" alt="Spectrum Dyes & Chemicals Ltd Gujarat" class="client-img" loading="lazy" decoding="async"></div>
                     <div class="client-logo-item"><img src="Clients-logo/6f59fb48eff33c66561f958b9edef34e.jfif" alt="Manufacturing Client Logo Gujarat" class="client-img" loading="lazy" decoding="async"></div>
@@ -496,6 +510,9 @@
                             <li><i class="fa-solid fa-check text-green me-2"></i> Industrial High Pressure Fittings</li>
                             <li><i class="fa-solid fa-check text-green me-2"></i> Chemical & Corrosive Fluid Lines</li>
                         </ul>
+                        <button type="button" class="btn btn-sm btn-light border w-100 mb-2 text-navy fw-semibold" onclick="openCertificateModal('Authorised Distributor Certificate - Astral Pipes', 'images/certificates/astral-certificate.jpg', 'M/s. MEHTA ENTERPRISE, SURAT', 'Industrial Pipes, Fittings & Valves (Chem PRO® & Aquarius+®)', 'Valid Till 31st March 2027', 'Astral Limited (Sandeep Engineer - Chairman & MD)', 'Hello Mehta Enterprise, I am inquiring about Astral Pipes & Fittings authorized supply.')">
+                            <i class="fa-solid fa-award text-success me-1"></i> View Dealership Certificate
+                        </button>
                         <a href="#contact" class="btn btn-outline-green w-100" onclick="selectProduct('Astral Pipes & Fittings')">
                             Enquire for Astral <i class="fa-solid fa-arrow-right ms-1"></i>
                         </a>
@@ -540,9 +557,355 @@
                             <li><i class="fa-solid fa-check text-green me-2"></i> Industrial Pulleys & Bushings</li>
                             <li><i class="fa-solid fa-check text-green me-2"></i> Fenaflex Tyre & Flexible Couplings</li>
                         </ul>
+                        <button type="button" class="btn btn-sm btn-light border w-100 mb-2 text-navy fw-semibold" onclick="openCertificateModal('Certificate of Authorization - JK Fenner', 'images/certificates/jk-fenner-certificate.png', 'M/s. SANGHVI SALES CORPORATION, SURAT', 'JK Fenner Industrial Belts & Power Transmission', 'Valid Upto 31/03/2027', 'J K Fenner (India) Limited', 'Hello Sanghvi Sales Corporation, I am inquiring about JK Fenner Belts authorized supply.')">
+                            <i class="fa-solid fa-award text-success me-1"></i> View Dealership Certificate
+                        </button>
                         <a href="#contact" class="btn btn-outline-green w-100" onclick="selectProduct('JK Fenner Belts & Couplings')">
                             Enquire for JK Fenner <i class="fa-solid fa-arrow-right ms-1"></i>
                         </a>
+                    </div>
+                </div>
+
+                <!-- Brand 6: Charminar (Eastwell Asbestos Industries) -->
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="brand-partner-card h-100 p-4 bg-white rounded-4 shadow-sm border-top border-4 border-navy hover-lift position-relative">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <span class="badge bg-navy-soft text-navy fw-bold px-3 py-2 rounded-pill">Friction Materials & Insulation</span>
+                            <img src="images/charminar-logo.png" alt="Charminar Brand Logo Surat" class="brand-logo-badge-img" style="max-height: 35px; width: auto; object-fit: contain;">
+                        </div>
+                        <h3 class="brand-name-title text-navy mb-2">Charminar® (Eastwell Industries)</h3>
+                        <p class="brand-desc text-muted mb-4">
+                            Stockist of genuine Charminar® industrial woven brake linings, non-asbestos friction materials (ZARC-45 & GRL-27), CAF gasket sheets, PTFE & graphite gland packings, and fire-resistant safety textiles.
+                        </p>
+                        <ul class="brand-feature-list list-unstyled mb-4">
+                            <li><i class="fa-solid fa-check text-navy me-2"></i> Woven Brake Linings (ZARC-45 & GRL-27 Non-Asbestos)</li>
+                            <li><i class="fa-solid fa-check text-navy me-2"></i> High Pressure CAF & Non-Asbestos Jointing Sheets</li>
+                            <li><i class="fa-solid fa-check text-navy me-2"></i> PTFE, Graphite & Ceramic Gland Packings & Ropes</li>
+                        </ul>
+                        <a href="https://www.charminar.co/" target="_blank" class="btn btn-sm btn-light border w-100 mb-2 text-navy fw-semibold" title="Visit Charminar Official Website">
+                            <i class="fa-solid fa-arrow-up-right-from-square me-1 text-primary"></i> Visit charminar.co Website
+                        </a>
+                        <a href="#contact" class="btn btn-outline-navy w-100" onclick="selectProduct('Charminar Woven Brake Lining & Gland Packings')">
+                            Enquire for Charminar <i class="fa-solid fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Brand 7: Champion Jointings Ltd. -->
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="brand-partner-card h-100 p-4 bg-white rounded-4 shadow-sm border-top border-4 border-green hover-lift position-relative">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <span class="badge bg-green-soft text-green fw-bold px-3 py-2 rounded-pill">Jointings & Packings</span>
+                            <i class="fa-solid fa-shield-halved text-green fs-4"></i>
+                        </div>
+                        <h3 class="brand-name-title text-navy mb-2">Champion Jointings Ltd.</h3>
+                        <p class="brand-desc text-muted mb-4">
+                            Authorized dealer & stockist for genuine Champion Asbestos Fibre Jointing Sheets for steam, oil, high pressure & acid, gland packing ropes, asbestos ropes, webbing tape, lagging rope, and Teflon thread seal tapes in Surat.
+                        </p>
+                        <ul class="brand-feature-list list-unstyled mb-4">
+                            <li><i class="fa-solid fa-check text-green me-2"></i> Asbestos & Non-Asbestos Fibre Jointing Sheets</li>
+                            <li><i class="fa-solid fa-check text-green me-2"></i> High-Temp Gland Packing Ropes & Asbestos Ropes</li>
+                            <li><i class="fa-solid fa-check text-green me-2"></i> Boiler Lagging Ropes, Webbing & Teflon Tapes</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-green w-100" onclick="selectProduct('Champion Asbestos Fibre Jointing Sheets')">
+                            Enquire for Champion Jointings <i class="fa-solid fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Brand 8: ROTEX® (KTR Made for Motion) -->
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="brand-partner-card h-100 p-4 bg-white rounded-4 shadow-sm border-top border-4 border-navy hover-lift position-relative">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <span class="badge bg-navy-soft text-navy fw-bold px-3 py-2 rounded-pill">Flexible Jaw Couplings</span>
+                            <img src="images/ktr-logo.jpg" alt="KTR ROTEX Logo Surat" class="brand-logo-badge-img" style="max-height: 35px; width: auto; object-fit: contain;">
+                        </div>
+                        <h3 class="brand-name-title text-navy mb-2">ROTEX® (KTR Made for Motion)</h3>
+                        <p class="brand-desc text-muted mb-4">
+                            Stockist for genuine ROTEX® torsionally flexible jaw couplings with vibration-damping T-PUR® polyurethane spiders. Built for fail-safe, high-temperature power transmission across pumps, compressors, and electric motor shafts.
+                        </p>
+                        <ul class="brand-feature-list list-unstyled mb-4">
+                            <li><i class="fa-solid fa-check text-navy me-2"></i> T-PUR® Spider Elements (92 Sh-A, 98 Sh-A, 64 Sh-D)</li>
+                            <li><i class="fa-solid fa-check text-navy me-2"></i> High Temperature (-50°C to +120°C) & Vibration Damping</li>
+                            <li><i class="fa-solid fa-check text-navy me-2"></i> Steel, Aluminum & Cast Iron Hubs (All Bore Sizes)</li>
+                        </ul>
+                        <a href="https://www.ktr.com" target="_blank" class="btn btn-sm btn-light border w-100 mb-2 text-navy fw-semibold" title="Visit KTR Official Website">
+                            <i class="fa-solid fa-arrow-up-right-from-square me-1 text-primary"></i> Visit ktr.com Catalog
+                        </a>
+                        <a href="#contact" class="btn btn-outline-navy w-100" onclick="selectProduct('ROTEX Flexible Couplings (KTR / T-PUR)')">
+                            Enquire for ROTEX Couplings <i class="fa-solid fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AUTHORIZED DEALERSHIP CERTIFICATES & ACCREDITATIONS -->
+    <section class="certificates-section py-5 position-relative" id="certificates">
+        <div class="container-fluid px-lg-5">
+            <div class="section-header text-center mb-5">
+                <span class="sub-heading-badge"><i class="fa-solid fa-award text-green me-1"></i> VERIFIED ACCREDITATIONS</span>
+                <h2 class="section-title text-navy">Official Dealership & Distributor Certificates</h2>
+                <p class="section-subtitle text-muted mx-auto">
+                    We take pride in our direct partnerships with India's premier industrial manufacturers. Inspect our verified dealership certificates issued by <strong>JK Fenner (India) Limited</strong> and <strong>Astral Limited</strong>.
+                </p>
+                <div class="heading-line mx-auto"></div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Certificate 1: JK Fenner -->
+                <div class="col-xl-6 col-lg-6">
+                    <div class="certificate-card h-100 rounded-4 overflow-hidden shadow-sm d-flex flex-column justify-content-between">
+                        <div>
+                            <!-- Header Strip -->
+                            <div class="cert-card-header p-4 d-flex align-items-center justify-content-between flex-wrap gap-2">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="bg-white p-2 rounded-3 shadow-sm border">
+                                        <img src="images/certificates/jk-fenner-certificate.png" alt="JK Fenner Dealership Logo" class="cert-brand-logo-img" style="max-height: 38px; width: auto; object-fit: contain;">
+                                    </div>
+                                    <div>
+                                        <span class="badge bg-green text-white px-2 py-1 rounded-pill small mb-1"><i class="fa-solid fa-shield-check me-1"></i> Authorized Dealer</span>
+                                        <h4 class="text-navy fw-bold mb-0">JK Fenner (India) Limited</h4>
+                                    </div>
+                                </div>
+                                <span class="badge bg-light text-navy border fw-bold px-3 py-2 rounded-pill">
+                                    <i class="fa-solid fa-calendar-check text-green me-1"></i> Valid Till 31/03/2027
+                                </span>
+                            </div>
+
+                            <div class="p-4">
+                                <div class="row g-4 align-items-center">
+                                    <!-- Certificate Preview Image Box -->
+                                    <div class="col-md-6">
+                                        <div class="certificate-img-container shadow-sm position-relative" onclick="openCertificateModal('Certificate of Authorization - JK Fenner', 'images/certificates/jk-fenner-certificate.png', 'M/s. SANGHVI SALES CORPORATION, SURAT', 'JK Fenner Industrial Belts & Power Transmission', 'Valid Upto 31/03/2027 (Issue Date: 1st April 2026)', 'J K Fenner (India) Limited', 'Hello Sanghvi Sales Corporation, I would like to verify and inquire regarding JK Fenner Industrial Belts supply.')">
+                                            <img src="images/certificates/jk-fenner-certificate.png" alt="JK Fenner Certificate of Authorization - Sanghvi Sales Corporation Surat" class="certificate-preview-img" loading="lazy" decoding="async">
+                                            <div class="cert-overlay">
+                                                <span class="cert-overlay-btn"><i class="fa-solid fa-up-right-and-down-left-from-center text-green"></i> Click to Zoom / View</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Certificate Structured Metadata -->
+                                    <div class="col-md-6">
+                                        <div class="cert-meta-box p-3">
+                                            <div class="cert-meta-item">
+                                                <div class="cert-meta-icon bg-green-soft text-green">
+                                                    <i class="fa-solid fa-building-circle-check"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="cert-meta-label">Issued To (Authorized Entity)</div>
+                                                    <div class="cert-meta-val">M/s. SANGHVI SALES CORPORATION</div>
+                                                    <small class="text-muted">Surat, South Gujarat</small>
+                                                </div>
+                                            </div>
+
+                                            <div class="cert-meta-item">
+                                                <div class="cert-meta-icon bg-navy-soft text-navy">
+                                                    <i class="fa-solid fa-certificate"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="cert-meta-label">Certificate Title</div>
+                                                    <div class="cert-meta-val">Certificate of Authorization</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cert-meta-item">
+                                                <div class="cert-meta-icon bg-green-soft text-green">
+                                                    <i class="fa-solid fa-gears"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="cert-meta-label">Authorized Scope</div>
+                                                    <div class="cert-meta-val">JK Fenner Industrial Belts</div>
+                                                    <small class="text-muted">Poly-F, Power Plus V-Belts & Drives</small>
+                                                </div>
+                                            </div>
+
+                                            <div class="cert-meta-item">
+                                                <div class="cert-meta-icon bg-navy-soft text-navy">
+                                                    <i class="fa-solid fa-building-flag"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="cert-meta-label">Issuing Authority</div>
+                                                    <div class="cert-meta-val">J K FENNER (INDIA) LIMITED</div>
+                                                    <small class="text-muted">Ellis Bridge, Ahmedabad / Madurai</small>
+                                                </div>
+                                            </div>
+
+                                            <div class="cert-meta-item">
+                                                <div class="cert-meta-icon bg-success-soft text-success">
+                                                    <i class="fa-solid fa-clock-rotate-left"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="cert-meta-label">Validity Period</div>
+                                                    <div class="cert-meta-val text-success">Valid upto 31/03/2027</div>
+                                                    <small class="text-muted">Issue Date: 1st April 2026</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer Action Buttons -->
+                        <div class="p-4 pt-0">
+                            <div class="d-flex flex-wrap gap-2">
+                                <button type="button" class="btn btn-green flex-fill" onclick="openCertificateModal('Certificate of Authorization - JK Fenner', 'images/certificates/jk-fenner-certificate.png', 'M/s. SANGHVI SALES CORPORATION, SURAT', 'JK Fenner Industrial Belts & Power Transmission', 'Valid Upto 31/03/2027 (Issue Date: 1st April 2026)', 'J K Fenner (India) Limited', 'Hello Sanghvi Sales Corporation, I would like to verify and inquire regarding JK Fenner Industrial Belts supply.')">
+                                    <i class="fa-solid fa-eye me-1"></i> View Full Certificate
+                                </button>
+                                <a href="images/certificates/jk-fenner-certificate.png" target="_blank" class="btn btn-outline-navy flex-fill" title="Open high-resolution file in new tab">
+                                    <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Open Original
+                                </a>
+                                <a href="#contact" class="btn btn-outline-green flex-fill" onclick="selectProduct('JK Fenner Belts & Couplings')">
+                                    <i class="fa-solid fa-paper-plane me-1"></i> Fenner RFQ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 2: Astral Pipes -->
+                <div class="col-xl-6 col-lg-6">
+                    <div class="certificate-card h-100 rounded-4 overflow-hidden shadow-sm d-flex flex-column justify-content-between">
+                        <div>
+                            <!-- Header Strip -->
+                            <div class="cert-card-header p-4 d-flex align-items-center justify-content-between flex-wrap gap-2">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="bg-white p-2 rounded-3 shadow-sm border">
+                                        <img src="images/certificates/astral-certificate.jpg" alt="Astral Pipes Dealership Logo" class="cert-brand-logo-img" style="max-height: 38px; width: auto; object-fit: contain;">
+                                    </div>
+                                    <div>
+                                        <span class="badge bg-green text-white px-2 py-1 rounded-pill small mb-1"><i class="fa-solid fa-shield-check me-1"></i> Authorised Distributor</span>
+                                        <h4 class="text-navy fw-bold mb-0">Astral Limited (Astral Pipes)</h4>
+                                    </div>
+                                </div>
+                                <span class="badge bg-light text-navy border fw-bold px-3 py-2 rounded-pill">
+                                    <i class="fa-solid fa-calendar-check text-green me-1"></i> Valid Till 31/03/2027
+                                </span>
+                            </div>
+
+                            <div class="p-4">
+                                <div class="row g-4 align-items-center">
+                                    <!-- Certificate Preview Image Box -->
+                                    <div class="col-md-6">
+                                        <div class="certificate-img-container shadow-sm position-relative" onclick="openCertificateModal('Authorised Distributor Certificate - Astral Pipes', 'images/certificates/astral-certificate.jpg', 'M/s. MEHTA ENTERPRISE, SURAT', 'Industrial Pipes, Fittings & Valves (Chem PRO® & Aquarius+®)', 'Valid Till 31st March 2027 (Date: 01-02-2025)', 'Astral Limited (Sandeep Engineer - Chairman & MD)', 'Hello Mehta Enterprise, I would like to verify and inquire regarding Astral Industrial Pipes & Fittings supply.')">
+                                            <img src="images/certificates/astral-certificate.jpg" alt="Astral Pipes Authorised Distributor Certificate - Mehta Enterprise Surat" class="certificate-preview-img" loading="lazy" decoding="async">
+                                            <div class="cert-overlay">
+                                                <span class="cert-overlay-btn"><i class="fa-solid fa-up-right-and-down-left-from-center text-green"></i> Click to Zoom / View</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Certificate Structured Metadata -->
+                                    <div class="col-md-6">
+                                        <div class="cert-meta-box p-3">
+                                            <div class="cert-meta-item">
+                                                <div class="cert-meta-icon bg-green-soft text-green">
+                                                    <i class="fa-solid fa-building-circle-check"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="cert-meta-label">Issued To (Authorized Entity)</div>
+                                                    <div class="cert-meta-val">M/s. MEHTA ENTERPRISE</div>
+                                                    <small class="text-muted">Surat, South Gujarat</small>
+                                                </div>
+                                            </div>
+
+                                            <div class="cert-meta-item">
+                                                <div class="cert-meta-icon bg-navy-soft text-navy">
+                                                    <i class="fa-solid fa-certificate"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="cert-meta-label">Certificate Title</div>
+                                                    <div class="cert-meta-val">Authorised Distributor Certificate</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cert-meta-item">
+                                                <div class="cert-meta-icon bg-green-soft text-green">
+                                                    <i class="fa-solid fa-faucet-drip"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="cert-meta-label">Authorized Scope</div>
+                                                    <div class="cert-meta-val">Industrial Pipes, Fittings & Valves</div>
+                                                    <small class="text-muted">Astral Chem PRO® CPVC & Aquarius+® UPVC</small>
+                                                </div>
+                                            </div>
+
+                                            <div class="cert-meta-item">
+                                                <div class="cert-meta-icon bg-navy-soft text-navy">
+                                                    <i class="fa-solid fa-file-signature"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="cert-meta-label">Authorized Signatory & Issuer</div>
+                                                    <div class="cert-meta-val">Sandeep Engineer (Chairman & MD)</div>
+                                                    <small class="text-muted">Astral Limited, S.G. Highway, Ahmedabad</small>
+                                                </div>
+                                            </div>
+
+                                            <div class="cert-meta-item">
+                                                <div class="cert-meta-icon bg-success-soft text-success">
+                                                    <i class="fa-solid fa-clock-rotate-left"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="cert-meta-label">Validity Period</div>
+                                                    <div class="cert-meta-val text-success">Valid till 31st March 2027</div>
+                                                    <small class="text-muted">Date of Issue: 01-02-2025</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer Action Buttons -->
+                        <div class="p-4 pt-0">
+                            <div class="d-flex flex-wrap gap-2">
+                                <button type="button" class="btn btn-green flex-fill" onclick="openCertificateModal('Authorised Distributor Certificate - Astral Pipes', 'images/certificates/astral-certificate.jpg', 'M/s. MEHTA ENTERPRISE, SURAT', 'Industrial Pipes, Fittings & Valves (Chem PRO® & Aquarius+®)', 'Valid Till 31st March 2027 (Date: 01-02-2025)', 'Astral Limited (Sandeep Engineer - Chairman & MD)', 'Hello Mehta Enterprise, I would like to verify and inquire regarding Astral Industrial Pipes & Fittings supply.')">
+                                    <i class="fa-solid fa-eye me-1"></i> View Full Certificate
+                                </button>
+                                <a href="images/certificates/astral-certificate.jpg" target="_blank" class="btn btn-outline-navy flex-fill" title="Open high-resolution file in new tab">
+                                    <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Open Original
+                                </a>
+                                <a href="#contact" class="btn btn-outline-green flex-fill" onclick="selectProduct('Astral Chem PRO CPVC Pipes & Fittings')">
+                                    <i class="fa-solid fa-paper-plane me-1"></i> Astral RFQ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trust and Authenticity Guarantee Strip -->
+            <div class="cert-guarantee-banner mt-5 p-4 rounded-4 shadow-sm text-white">
+                <div class="row align-items-center gy-3">
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="bg-green p-3 rounded-circle fs-3 text-white flex-shrink-0">
+                                <i class="fa-solid fa-certificate"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">Authenticity & Manufacturer Warranty Guaranteed</h5>
+                                <p class="mb-0 text-light-80 small">Every meter of piping and every drive belt supplied by Sanghvi Sales & Mehta Enterprise comes directly with OEM assurance and factory quality compliance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex flex-wrap gap-2 justify-content-lg-end">
+                            <div class="cert-guarantee-pill">
+                                <i class="fa-solid fa-circle-check text-green-light"></i>
+                                <span>100% Direct Factory Sourced</span>
+                            </div>
+                            <div class="cert-guarantee-pill">
+                                <i class="fa-solid fa-file-lines text-green-light"></i>
+                                <span>MTC / Test Reports Available</span>
+                            </div>
+                            <div class="cert-guarantee-pill">
+                                <i class="fa-solid fa-headset text-green-light"></i>
+                                <span>OEM Technical Support</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -570,6 +933,8 @@
                     <button type="button" class="btn btn-filter rounded-pill" data-filter="belts">Belts & Poly-F</button>
                     <button type="button" class="btn btn-filter rounded-pill" data-filter="pipes">Pipes & Pressure Fittings</button>
                     <button type="button" class="btn btn-filter rounded-pill" data-filter="hoses">Hoses & Suction</button>
+                    <button type="button" class="btn btn-filter rounded-pill" data-filter="charminar">Charminar® Friction & Insulation</button>
+                    <button type="button" class="btn btn-filter rounded-pill" data-filter="jointings">Champion Jointings & Packings</button>
                 </div>
             </div>
 
@@ -1066,6 +1431,286 @@
                     </div>
                 </div>
 
+                <!-- Item 15: Charminar Industrial Woven Brake Lining Rolls (ZARC-45 & GRL-27) -->
+                <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-category="charminar tools">
+                    <div class="product-card h-100 rounded-4 overflow-hidden shadow-sm hover-elevate">
+                        <div class="product-img-box position-relative" onclick="openProductModal('Charminar Industrial Woven Brake Lining (ZARC-45 / GRL-27)', 'images/charminar-brake-lining.png', 'Charminar® Friction Materials', 'Heavy-duty Charminar® woven industrial brake linings in rolls, available in metallic wire reinforced (ZARC-45) and asbestos-free (GRL-27) grades. Delivers uniform high friction coefficient, excellent heat dissipation, and superior wear resistance for cranes, marine winches, forging presses, oil drilling rigs, elevators, and textile machinery drives.', 'images/charminar-products (1).png')">
+                            <img src="images/charminar-brake-lining.png" alt="Charminar Woven Brake Lining Rolls ZARC-45 GRL-27 Surat" class="product-img" loading="lazy" decoding="async">
+                            <span class="product-badge bg-navy">Charminar® Grade</span>
+                            <div class="product-overlay">
+                                <button class="btn btn-sm btn-light fw-bold" onclick="event.stopPropagation(); openProductModal('Charminar Industrial Woven Brake Lining (ZARC-45 / GRL-27)', 'images/charminar-brake-lining.png', 'Charminar® Friction Materials', 'Heavy-duty Charminar® woven industrial brake linings in rolls, available in metallic wire reinforced (ZARC-45) and asbestos-free (GRL-27) grades. Delivers uniform high friction coefficient, excellent heat dissipation, and superior wear resistance for cranes, marine winches, forging presses, oil drilling rigs, elevators, and textile machinery drives.', 'images/charminar-products (1).png')">
+                                    <i class="fa-solid fa-eye me-1"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info p-4">
+                            <span class="product-cat text-green fw-semibold small">BRAKE LININGS & FRICTION</span>
+                            <h4 class="product-title text-navy mt-1">Charminar Woven Brake Lining Rolls</h4>
+                            <p class="product-snippet text-muted small">
+                                Heavy-duty ZARC-45 & GRL-27 non-asbestos friction brake linings for cranes, winches, presses & industrial drives.
+                            </p>
+                            <div class="product-specs d-flex flex-wrap gap-1 mb-3">
+                                <span class="spec-tag">ZARC-45 Metallic</span>
+                                <span class="spec-tag">GRL-27 Non-Asbestos</span>
+                                <span class="spec-tag">Rolls & Custom Sizes</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between pt-2 border-top">
+                                <a href="https://wa.me/919825760022?text=Hello%2C%20I%20want%20price%20for%20Charminar%20Industrial%20Woven%20Brake%20Lining" target="_blank" class="btn btn-sm btn-outline-success">
+                                    <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
+                                </a>
+                                <button class="btn btn-sm btn-green" onclick="selectProduct('Charminar Industrial Woven Brake Lining')">
+                                    Enquire <i class="fa-solid fa-paper-plane ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 16: Charminar Industrial Gland Packings & Braided Ropes -->
+                <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-category="charminar">
+                    <div class="product-card h-100 rounded-4 overflow-hidden shadow-sm hover-elevate">
+                        <div class="product-img-box position-relative" onclick="openProductModal('Charminar Industrial Gland Packings & Ropes', 'images/charminar-gland-packing.png', 'Charminar® Sealing Solutions', 'Complete range of Charminar® braided gland packings: PTFE filament packing, flexible pure expanded graphite packing, carbon fiber packing, Aramid (Kevlar) combination packings, and ceramic/fiberglass twisted ropes for rotary pumps, high-pressure valves, mixers, and chemical fluid sealing.', 'images/charminar-products (1).png')">
+                            <img src="images/charminar-gland-packing.png" alt="Charminar Gland Packing PTFE Graphite Carbon Ropes Surat" class="product-img" loading="lazy" decoding="async">
+                            <span class="product-badge bg-green">Charminar® Sealing</span>
+                            <div class="product-overlay">
+                                <button class="btn btn-sm btn-light fw-bold" onclick="event.stopPropagation(); openProductModal('Charminar Industrial Gland Packings & Ropes', 'images/charminar-gland-packing.png', 'Charminar® Sealing Solutions', 'Complete range of Charminar® braided gland packings: PTFE filament packing, flexible pure expanded graphite packing, carbon fiber packing, Aramid (Kevlar) combination packings, and ceramic/fiberglass twisted ropes for rotary pumps, high-pressure valves, mixers, and chemical fluid sealing.', 'images/charminar-products (1).png')">
+                                    <i class="fa-solid fa-eye me-1"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info p-4">
+                            <span class="product-cat text-green fw-semibold small">GLAND PACKINGS & SEALS</span>
+                            <h4 class="product-title text-navy mt-1">Charminar Industrial Gland Packings & Ropes</h4>
+                            <p class="product-snippet text-muted small">
+                                Premium PTFE, graphite, carbon yarn & ceramic braided gland packings for pumps, valves & chemical lines.
+                            </p>
+                            <div class="product-specs d-flex flex-wrap gap-1 mb-3">
+                                <span class="spec-tag">PTFE & Graphite</span>
+                                <span class="spec-tag">Carbon / Aramid</span>
+                                <span class="spec-tag">Ceramic Ropes</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between pt-2 border-top">
+                                <a href="https://wa.me/919825760022?text=Hello%2C%20I%20want%20price%20for%20Charminar%20Industrial%20Gland%20Packings%20and%20Ropes" target="_blank" class="btn btn-sm btn-outline-success">
+                                    <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
+                                </a>
+                                <button class="btn btn-sm btn-green" onclick="selectProduct('Charminar Industrial Gland Packings')">
+                                    Enquire <i class="fa-solid fa-paper-plane ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 17: Charminar CAF & Non-Asbestos Jointing Gasket Sheets -->
+                <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-category="charminar pipes">
+                    <div class="product-card h-100 rounded-4 overflow-hidden shadow-sm hover-elevate">
+                        <div class="product-img-box position-relative" onclick="openProductModal('Charminar CAF & Non-Asbestos Jointing Sheets', 'images/charminar-jointing-sheets.jpg', 'Charminar® Gasket Sheets', 'High-performance Charminar® Compressed Asbestos Fibre (CAF) and Non-Asbestos jointing gasket sheets. Available in metallic wire-inserted and non-metallic variants for flange sealing against steam, superheated water, acids, alkalies, petroleum oils, and gases across power plants and chemical factories.', 'images/charminar-products (1).png')">
+                            <img src="images/charminar-jointing-sheets.jpg" alt="Charminar CAF Non Asbestos Jointing Gasket Sheets Surat" class="product-img" loading="lazy" decoding="async">
+                            <span class="product-badge bg-navy">Gasket Jointing</span>
+                            <div class="product-overlay">
+                                <button class="btn btn-sm btn-light fw-bold" onclick="event.stopPropagation(); openProductModal('Charminar CAF & Non-Asbestos Jointing Sheets', 'images/charminar-jointing-sheets.jpg', 'Charminar® Gasket Sheets', 'High-performance Charminar® Compressed Asbestos Fibre (CAF) and Non-Asbestos jointing gasket sheets. Available in metallic wire-inserted and non-metallic variants for flange sealing against steam, superheated water, acids, alkalies, petroleum oils, and gases across power plants and chemical factories.', 'images/charminar-products (1).png')">
+                                    <i class="fa-solid fa-eye me-1"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info p-4">
+                            <span class="product-cat text-green fw-semibold small">JOINTING & GASKETS</span>
+                            <h4 class="product-title text-navy mt-1">Charminar CAF & Non-Asbestos Jointing Sheets</h4>
+                            <p class="product-snippet text-muted small">
+                                Industrial gasket jointing sheets engineered for high-pressure steam, oil, chemical & gas flange sealing.
+                            </p>
+                            <div class="product-specs d-flex flex-wrap gap-1 mb-3">
+                                <span class="spec-tag">High Steam Grade</span>
+                                <span class="spec-tag">Wire Reinforced</span>
+                                <span class="spec-tag">Acid & Oil Resistant</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between pt-2 border-top">
+                                <a href="https://wa.me/919825760022?text=Hello%2C%20I%20want%20price%20for%20Charminar%20CAF%20and%20Non-Asbestos%20Jointing%20Sheets" target="_blank" class="btn btn-sm btn-outline-success">
+                                    <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
+                                </a>
+                                <button class="btn btn-sm btn-green" onclick="selectProduct('Charminar CAF Jointing Sheets')">
+                                    Enquire <i class="fa-solid fa-paper-plane ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 18: Charminar Thermal Insulation & Safety Textiles -->
+                <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-category="charminar">
+                    <div class="product-card h-100 rounded-4 overflow-hidden shadow-sm hover-elevate">
+                        <div class="product-img-box position-relative" onclick="openProductModal('Charminar Thermal Insulation & Safety Textiles', 'images/charminar-safety-insulation.jpg', 'Charminar® Heat Shield & Safety', 'Charminar® industrial thermal insulation and fire safety solutions: vermiculite coated fiberglass cloths, ceramic fiber tapes, welding blankets, aluminized heat proximity boiler suits, gloves, hoods, and high-temp millboards designed for boiler rooms, foundries, and furnace operations.', 'images/charminar-products (1).png')">
+                            <img src="images/charminar-safety-insulation.jpg" alt="Charminar Thermal Insulation Safety Suit Fire Blankets Surat" class="product-img" loading="lazy" decoding="async">
+                            <span class="product-badge bg-green">Thermal Safety</span>
+                            <div class="product-overlay">
+                                <button class="btn btn-sm btn-light fw-bold" onclick="event.stopPropagation(); openProductModal('Charminar Thermal Insulation & Safety Textiles', 'images/charminar-safety-insulation.jpg', 'Charminar® Heat Shield & Safety', 'Charminar® industrial thermal insulation and fire safety solutions: vermiculite coated fiberglass cloths, ceramic fiber tapes, welding blankets, aluminized heat proximity boiler suits, gloves, hoods, and high-temp millboards designed for boiler rooms, foundries, and furnace operations.', 'images/charminar-products (1).png')">
+                                    <i class="fa-solid fa-eye me-1"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info p-4">
+                            <span class="product-cat text-green fw-semibold small">THERMAL INSULATION & SAFETY</span>
+                            <h4 class="product-title text-navy mt-1">Charminar Thermal Insulation & Safety Gear</h4>
+                            <p class="product-snippet text-muted small">
+                                Ceramic & fiberglass fire blankets, heat shield tapes, aluminized safety boiler suits & furnace fabrics.
+                            </p>
+                            <div class="product-specs d-flex flex-wrap gap-1 mb-3">
+                                <span class="spec-tag">Aluminized Suits</span>
+                                <span class="spec-tag">Welding Blankets</span>
+                                <span class="spec-tag">Up to 1200°C Rated</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between pt-2 border-top">
+                                <a href="https://wa.me/919825760022?text=Hello%2C%20I%20want%20price%20for%20Charminar%20Thermal%20Insulation%20and%20Safety%20Products" target="_blank" class="btn btn-sm btn-outline-success">
+                                    <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
+                                </a>
+                                <button class="btn btn-sm btn-green" onclick="selectProduct('Charminar Thermal Insulation')">
+                                    Enquire <i class="fa-solid fa-paper-plane ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 19: Charminar Master Product Range Flyer -->
+                <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-category="charminar">
+                    <div class="product-card h-100 rounded-4 overflow-hidden shadow-sm hover-elevate">
+                        <div class="product-img-box position-relative" onclick="openProductModal('Charminar Master Product Catalog & Range', 'images/charminar-products (1).png', 'Charminar® - Eastwell Industries', 'Official full-range industrial catalog of Charminar® (Eastwell Asbestos Industries Pvt. Ltd.). Complete supply of industrial brake lining, gland packing, jointing sheets, and safety apparel with ready stock in Udhana GIDC Surat.')">
+                            <img src="images/charminar-products (1).png" alt="Charminar Full Product Range Catalog Eastwell Asbestos Industries Surat" class="product-img" loading="lazy" decoding="async">
+                            <span class="product-badge bg-navy">Full Catalog</span>
+                            <div class="product-overlay">
+                                <button class="btn btn-sm btn-light fw-bold" onclick="event.stopPropagation(); openProductModal('Charminar Master Product Catalog & Range', 'images/charminar-products (1).png', 'Charminar® - Eastwell Industries', 'Official full-range industrial catalog of Charminar® (Eastwell Asbestos Industries Pvt. Ltd.). Complete supply of industrial brake lining, gland packing, jointing sheets, and safety apparel with ready stock in Udhana GIDC Surat.')">
+                                    <i class="fa-solid fa-eye me-1"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info p-4">
+                            <span class="product-cat text-green fw-semibold small">CHARMINAR® CATALOG</span>
+                            <h4 class="product-title text-navy mt-1">Charminar Master Industrial Range</h4>
+                            <p class="product-snippet text-muted small">
+                                Comprehensive catalog overview of friction materials, gasket sheets, gland packings & insulation products.
+                            </p>
+                            <div class="product-specs d-flex flex-wrap gap-1 mb-3">
+                                <span class="spec-tag">Official Catalog</span>
+                                <span class="spec-tag">charminar.co Sourced</span>
+                                <span class="spec-tag">Ready Warehouse Stock</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between pt-2 border-top">
+                                <a href="https://wa.me/919825760022?text=Hello%2C%20I%20want%20full%20catalog%20and%20price%20list%20for%20Charminar%20Products" target="_blank" class="btn btn-sm btn-outline-success">
+                                    <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
+                                </a>
+                                <button class="btn btn-sm btn-green" onclick="selectProduct('Charminar Master Product Range')">
+                                    Enquire <i class="fa-solid fa-paper-plane ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 20: Champion Asbestos Fibre Jointing Sheets (Steam, Oil, High Pressure, Acid) -->
+                <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-category="jointings pipes">
+                    <div class="product-card h-100 rounded-4 overflow-hidden shadow-sm hover-elevate">
+                        <div class="product-img-box position-relative" onclick="openProductModal('Champion Asbestos Fibre Jointing Sheets', 'images/champion-jointing-sheets.jpg', 'Champion Jointings Ltd.', 'Original Champion Jointings Ltd. Asbestos Fibre & Non-Asbestos Gasket Jointing Sheets engineered for steam, oil, superheated water, acids, and extreme pressure pipeline flanges. Available in metallic wire-reinforced and plain grades (Style 20, Style 40, Style 60) for industrial sealing reliability.')">
+                            <img src="images/champion-jointing-sheets.jpg" alt="Champion Asbestos Fibre Jointing Sheets for Steam Oil High Pressure Acid Surat" class="product-img" loading="lazy" decoding="async">
+                            <span class="product-badge bg-green">Champion Original</span>
+                            <div class="product-overlay">
+                                <button class="btn btn-sm btn-light fw-bold" onclick="event.stopPropagation(); openProductModal('Champion Asbestos Fibre Jointing Sheets', 'images/champion-jointing-sheets.jpg', 'Champion Jointings Ltd.', 'Original Champion Jointings Ltd. Asbestos Fibre & Non-Asbestos Gasket Jointing Sheets engineered for steam, oil, superheated water, acids, and extreme pressure pipeline flanges. Available in metallic wire-reinforced and plain grades (Style 20, Style 40, Style 60) for industrial sealing reliability.')">
+                                    <i class="fa-solid fa-eye me-1"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info p-4">
+                            <span class="product-cat text-green fw-semibold small">CHAMPION JOINTINGS LTD.</span>
+                            <h4 class="product-title text-navy mt-1">Champion Asbestos Fibre Jointing Sheets</h4>
+                            <p class="product-snippet text-muted small">
+                                Premium gasket jointing sheets for high pressure steam, oil, acid & corrosive chemical pipeline sealing.
+                            </p>
+                            <div class="product-specs d-flex flex-wrap gap-1 mb-3">
+                                <span class="spec-tag">Steam & Oil Grade</span>
+                                <span class="spec-tag">Wire Reinforced</span>
+                                <span class="spec-tag">Acid Resistant</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between pt-2 border-top">
+                                <a href="https://wa.me/919825760022?text=Hello%2C%20I%20want%20price%20for%20Champion%20Asbestos%20Fibre%20Jointing%20Sheets" target="_blank" class="btn btn-sm btn-outline-success">
+                                    <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
+                                </a>
+                                <button class="btn btn-sm btn-green" onclick="selectProduct('Champion Asbestos Fibre Jointing Sheets')">
+                                    Enquire <i class="fa-solid fa-paper-plane ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 21: Champion Gland Packing Ropes, Lagging Ropes, Webbing & Teflon Tapes -->
+                <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-category="jointings tools">
+                    <div class="product-card h-100 rounded-4 overflow-hidden shadow-sm hover-elevate">
+                        <div class="product-img-box position-relative" onclick="openProductModal('Champion Gland Packing, Lagging Ropes & Tapes', 'images/champion-packings-tapes.jpg', 'Champion Sealing & Insulation', 'Comprehensive Champion range of sealing & thermal insulation products: braided PTFE and pure graphite Gland Packing Ropes, dense boiler Asbestos/Ceramic Lagging Ropes, high-temperature Webbing Tapes, and 100% pure PTFE Teflon Thread Seal Tapes for leak-proof industrial pipe connections.')">
+                            <img src="images/champion-packings-tapes.jpg" alt="Champion Gland Packing Rope Asbestos Rope Webbing Tape Lagging Rope Teflon Tape Surat" class="product-img" loading="lazy" decoding="async">
+                            <span class="product-badge bg-navy">Sealing & Tapes</span>
+                            <div class="product-overlay">
+                                <button class="btn btn-sm btn-light fw-bold" onclick="event.stopPropagation(); openProductModal('Champion Gland Packing, Lagging Ropes & Tapes', 'images/champion-packings-tapes.jpg', 'Champion Sealing & Insulation', 'Comprehensive Champion range of sealing & thermal insulation products: braided PTFE and pure graphite Gland Packing Ropes, dense boiler Asbestos/Ceramic Lagging Ropes, high-temperature Webbing Tapes, and 100% pure PTFE Teflon Thread Seal Tapes for leak-proof industrial pipe connections.')">
+                                    <i class="fa-solid fa-eye me-1"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info p-4">
+                            <span class="product-cat text-green fw-semibold small">SEALING & INSULATION</span>
+                            <h4 class="product-title text-navy mt-1">Champion Gland Packing, Lagging Ropes & Tapes</h4>
+                            <p class="product-snippet text-muted small">
+                                Braided gland packing ropes, asbestos & lagging ropes, heat webbing tape & PTFE Teflon thread seal tapes.
+                            </p>
+                            <div class="product-specs d-flex flex-wrap gap-1 mb-3">
+                                <span class="spec-tag">Gland Packing Ropes</span>
+                                <span class="spec-tag">Lagging & Asbestos Rope</span>
+                                <span class="spec-tag">Webbing & Teflon Tape</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between pt-2 border-top">
+                                <a href="https://wa.me/919825760022?text=Hello%2C%20I%20want%20price%20for%20Champion%20Gland%20Packing%20Ropes%20and%20Teflon%20Tapes" target="_blank" class="btn btn-sm btn-outline-success">
+                                    <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
+                                </a>
+                                <button class="btn btn-sm btn-green" onclick="selectProduct('Champion Gland Packing Ropes & Tapes')">
+                                    Enquire <i class="fa-solid fa-paper-plane ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 22: ROTEX® Torsionally Flexible Couplings (with T-PUR® Spiders) -->
+                <div class="col-xl-3 col-lg-4 col-md-6 product-item" data-category="couplings tools">
+                    <div class="product-card h-100 rounded-4 overflow-hidden shadow-sm hover-elevate">
+                        <div class="product-img-box position-relative" onclick="openProductModal('ROTEX® Torsionally Flexible Couplings (T-PUR®)', 'images/rotex-coupling-product.jpg', 'KTR Made for Motion / ROTEX®', 'Original ROTEX® torsionally flexible jaw couplings engineered with high-performance T-PUR® elastomeric spider inserts (in 92 Sh-A orange, 98 Sh-A purple/red, and 64 Sh-D green). Features fail-safe axial plug-in design, high thermal endurance (-50°C to +120°C / +150°C peak), and maximum vibration damping for electric motors, pumps, compressors, and industrial power drive lines.', 'images/rotex-coupling.jpeg')">
+                            <img src="images/rotex-coupling-product.jpg" alt="ROTEX Torsionally Flexible Couplings with T-PUR Spider Surat" class="product-img" loading="lazy" decoding="async">
+                            <span class="product-badge bg-navy">ROTEX® KTR</span>
+                            <div class="product-overlay">
+                                <button class="btn btn-sm btn-light fw-bold" onclick="event.stopPropagation(); openProductModal('ROTEX® Torsionally Flexible Couplings (T-PUR®)', 'images/rotex-coupling-product.jpg', 'KTR Made for Motion / ROTEX®', 'Original ROTEX® torsionally flexible jaw couplings engineered with high-performance T-PUR® elastomeric spider inserts (in 92 Sh-A orange, 98 Sh-A purple/red, and 64 Sh-D green). Features fail-safe axial plug-in design, high thermal endurance (-50°C to +120°C / +150°C peak), and maximum vibration damping for electric motors, pumps, compressors, and industrial power drive lines.', 'images/rotex-coupling.jpeg')">
+                                    <i class="fa-solid fa-eye me-1"></i> Quick View
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info p-4">
+                            <span class="product-cat text-green fw-semibold small">ROTEX® COUPLINGS</span>
+                            <h4 class="product-title text-navy mt-1">ROTEX® T-PUR Flexible Couplings</h4>
+                            <p class="product-snippet text-muted small">
+                                Torsionally flexible jaw couplings with vibration-damping T-PUR® spiders for electric motors & pumps.
+                            </p>
+                            <div class="product-specs d-flex flex-wrap gap-1 mb-3">
+                                <span class="spec-tag">T-PUR® Spiders</span>
+                                <span class="spec-tag">-50°C to +120°C</span>
+                                <span class="spec-tag">Fail-Safe Jaw Drive</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between pt-2 border-top">
+                                <a href="https://wa.me/919825760022?text=Hello%2C%20I%20want%20price%20for%20ROTEX%20Torsionally%20Flexible%20Couplings%20with%20T-PUR" target="_blank" class="btn btn-sm btn-outline-success">
+                                    <i class="fa-brands fa-whatsapp me-1"></i> WhatsApp
+                                </a>
+                                <button class="btn btn-sm btn-green" onclick="selectProduct('ROTEX Flexible Couplings (KTR / T-PUR)')">
+                                    Enquire <i class="fa-solid fa-paper-plane ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <!-- Custom Requirement Banner -->
@@ -1408,6 +2053,13 @@
                                         <option value="Tyre Couplings">Tyre Couplings (Fenaflex)</option>
                                         <option value="Pin Bush & Jaw Couplings">Pin Bush & Jaw Couplings</option>
                                         <option value="V-Groove Industrial Pulleys">V-Groove Industrial Pulleys</option>
+                                        <option value="Charminar Industrial Woven Brake Lining">Charminar® Woven Brake Lining Rolls (ZARC-45 / GRL-27)</option>
+                                        <option value="Charminar Industrial Gland Packings">Charminar® Gland Packings & Ropes (PTFE, Graphite, Ceramic)</option>
+                                        <option value="Charminar CAF Jointing Sheets">Charminar® CAF & Non-Asbestos Gasket Jointing Sheets</option>
+                                        <option value="Charminar Thermal Insulation">Charminar® Thermal Insulation & Fire Safety Gear</option>
+                                        <option value="Champion Asbestos Fibre Jointing Sheets">Champion Asbestos Fibre Jointing Sheets (Steam, Oil, Acid)</option>
+                                        <option value="Champion Gland Packing Ropes & Tapes">Champion Gland Packing Ropes, Lagging Rope & Teflon Tape</option>
+                                        <option value="ROTEX Flexible Couplings (KTR / T-PUR)">ROTEX® Torsionally Flexible Couplings (KTR / T-PUR® Spider)</option>
                                         <option value="Other Custom Requirement">Other Custom Requirement</option>
                                     </select>
                                 </div>
@@ -1478,6 +2130,7 @@
                         <li><a href="#about"><i class="fa-solid fa-chevron-right me-1 text-green-light"></i> About Company</a></li>
                         <li><a href="#products"><i class="fa-solid fa-chevron-right me-1 text-green-light"></i> Products Range</a></li>
                         <li><a href="#authorized-brands"><i class="fa-solid fa-chevron-right me-1 text-green-light"></i> Authorized Brands</a></li>
+                        <li><a href="#certificates"><i class="fa-solid fa-chevron-right me-1 text-green-light"></i> Dealership Certificates</a></li>
                         <li><a href="#partners"><i class="fa-solid fa-chevron-right me-1 text-green-light"></i> Leadership</a></li>
                         <li><a href="#contact"><i class="fa-solid fa-chevron-right me-1 text-green-light"></i> Contact & Map</a></li>
                     </ul>
@@ -1493,6 +2146,9 @@
                         <li><a href="#products" onclick="filterCategory('pipes')"><i class="fa-solid fa-chevron-right me-1 text-green-light"></i> Astral Chem PRO & UPVC</a></li>
                         <li><a href="#products" onclick="filterCategory('hoses')"><i class="fa-solid fa-chevron-right me-1 text-green-light"></i> Dutron Suction & Delivery Hoses</a></li>
                         <li><a href="#products" onclick="filterCategory('belts')"><i class="fa-solid fa-chevron-right me-1 text-green-light"></i> Fenner Poly-F & V-Belts</a></li>
+                        <li><a href="#products" onclick="filterCategory('charminar')"><i class="fa-solid fa-chevron-right me-1 text-green-light"></i> Charminar® Brake Lining & Packings</a></li>
+                        <li><a href="#products" onclick="filterCategory('jointings')"><i class="fa-solid fa-chevron-right me-1 text-green-light"></i> Champion Jointings & Tapes</a></li>
+                        <li><a href="#products" onclick="filterCategory('couplings')"><i class="fa-solid fa-chevron-right me-1 text-green-light"></i> ROTEX® T-PUR Flexible Couplings</a></li>
                     </ul>
                 </div>
 
@@ -1593,6 +2249,99 @@
                                 <button type="button" class="btn btn-green flex-fill py-2" data-bs-dismiss="modal" id="modalEnquireBtn">
                                     <i class="fa-solid fa-paper-plane me-1"></i> Get Best Price
                                 </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CERTIFICATE FULL-VIEW LIGHTBOX MODAL -->
+    <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="modal-header bg-navy text-white py-3">
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-award text-green-light fs-5"></i>
+                        <h5 class="modal-title fw-bold mb-0" id="certModalLabel"><span id="certModalTitle">Authorized Dealership Certificate</span></h5>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 bg-light">
+                    <div class="row g-4 align-items-center">
+                        <!-- Left: High-Res Certificate Viewer Frame -->
+                        <div class="col-lg-7 text-center">
+                            <div class="cert-modal-img-frame shadow-sm">
+                                <img src="" id="certModalImg" alt="Dealership Certificate High Res" class="cert-modal-full-img img-fluid">
+                            </div>
+                            <div class="mt-2 text-center">
+                                <a href="#" id="certModalFullLink" target="_blank" class="btn btn-sm btn-outline-navy rounded-pill px-3">
+                                    <i class="fa-solid fa-up-right-and-down-left-from-center me-1 text-green"></i> Open Full High-Resolution Image in New Tab
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Right: Detailed Credentials Box -->
+                        <div class="col-lg-5">
+                            <div class="p-4 bg-white rounded-4 shadow-sm border h-100 d-flex flex-column justify-content-between">
+                                <div>
+                                    <div class="d-flex align-items-center gap-2 mb-3">
+                                        <span class="badge bg-green px-3 py-2 rounded-pill fw-bold"><i class="fa-solid fa-circle-check me-1"></i> Verified & Certified</span>
+                                        <span class="badge bg-navy-soft text-navy px-3 py-2 rounded-pill fw-bold">Official Stockist</span>
+                                    </div>
+
+                                    <h4 class="fw-bold text-navy mb-3" id="certModalEntityTitle">Dealership Information</h4>
+
+                                    <div class="cert-meta-box p-3 mb-3">
+                                        <div class="cert-meta-item">
+                                            <div class="cert-meta-icon bg-green-soft text-green"><i class="fa-solid fa-building"></i></div>
+                                            <div>
+                                                <div class="cert-meta-label">Authorized Entity</div>
+                                                <div class="cert-meta-val" id="certModalIssuedTo">M/s. SANGHVI SALES CORPORATION</div>
+                                            </div>
+                                        </div>
+                                        <div class="cert-meta-item">
+                                            <div class="cert-meta-icon bg-navy-soft text-navy"><i class="fa-solid fa-boxes-stacked"></i></div>
+                                            <div>
+                                                <div class="cert-meta-label">Product Scope</div>
+                                                <div class="cert-meta-val" id="certModalCategory">Industrial Belts & Power Transmission</div>
+                                            </div>
+                                        </div>
+                                        <div class="cert-meta-item">
+                                            <div class="cert-meta-icon bg-green-soft text-green"><i class="fa-solid fa-calendar-check"></i></div>
+                                            <div>
+                                                <div class="cert-meta-label">Validity</div>
+                                                <div class="cert-meta-val text-success" id="certModalValidity">Valid upto 31/03/2027</div>
+                                            </div>
+                                        </div>
+                                        <div class="cert-meta-item">
+                                            <div class="cert-meta-icon bg-navy-soft text-navy"><i class="fa-solid fa-award"></i></div>
+                                            <div>
+                                                <div class="cert-meta-label">Issuing Authority</div>
+                                                <div class="cert-meta-val" id="certModalIssuer">JK Fenner (India) Limited</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="p-3 bg-light rounded-3 border mb-3 small">
+                                        <div class="d-flex align-items-center gap-2 mb-1 text-navy fw-bold">
+                                            <i class="fa-solid fa-shield-halved text-green"></i> 100% Genuine Guaranteed
+                                        </div>
+                                        <div class="text-muted">
+                                            All materials dispatched are genuine factory stock covered by manufacturer terms, test certificates, and batch traceability.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-column gap-2 mt-3">
+                                    <a href="#" id="certModalWhatsAppBtn" target="_blank" class="btn btn-whatsapp py-2 w-100 text-center">
+                                        <i class="fa-brands fa-whatsapp me-2"></i> Inquire on WhatsApp
+                                    </a>
+                                    <a href="#contact" class="btn btn-green py-2 w-100 text-center" data-bs-dismiss="modal">
+                                        <i class="fa-solid fa-paper-plane me-2"></i> Request Official Quote
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>

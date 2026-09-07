@@ -235,3 +235,39 @@ function fallbackCopyText(text, btnElement, originalText) {
         btnElement.innerHTML = originalText;
     }, 2200);
 }
+
+// Certificate Lightbox / Full View Modal Function
+function openCertificateModal(certTitle, imageSrc, issuedTo, category, validity, issuer, waQuery) {
+    const modalElem = document.getElementById('certificateModal');
+    if (!modalElem) return;
+
+    const modal = bootstrap.Modal.getInstance(modalElem) || new bootstrap.Modal(modalElem);
+
+    const titleElem = document.getElementById('certModalTitle');
+    const imgElem = document.getElementById('certModalImg');
+    const fullLinkElem = document.getElementById('certModalFullLink');
+    const issuedToElem = document.getElementById('certModalIssuedTo');
+    const categoryElem = document.getElementById('certModalCategory');
+    const validityElem = document.getElementById('certModalValidity');
+    const issuerElem = document.getElementById('certModalIssuer');
+    const waBtnElem = document.getElementById('certModalWhatsAppBtn');
+
+    if (titleElem) titleElem.textContent = certTitle;
+    if (imgElem) {
+        imgElem.src = imageSrc;
+        imgElem.alt = `${certTitle} - ${issuedTo}`;
+    }
+    if (fullLinkElem) fullLinkElem.href = imageSrc;
+    if (issuedToElem) issuedToElem.textContent = issuedTo;
+    if (categoryElem) categoryElem.textContent = category;
+    if (validityElem) validityElem.textContent = validity;
+    if (issuerElem) issuerElem.textContent = issuer;
+
+    if (waBtnElem) {
+        const queryText = waQuery || `Hello Sanghvi Sales Corporation & Mehta Enterprise, I would like to verify / inquire regarding your ${certTitle} for ${issuedTo}.`;
+        waBtnElem.href = `https://wa.me/919825760022?text=${encodeURIComponent(queryText)}`;
+    }
+
+    modal.show();
+}
+
